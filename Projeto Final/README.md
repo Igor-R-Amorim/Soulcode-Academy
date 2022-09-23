@@ -24,26 +24,26 @@ Referencias: Slide 34 - Apresentação do Trabalho
 <br>
 
 Apenas 34% dos laboratorios em territorio brasileiro são empresas Multinacionais, ou seja, mais de 60% deles são empresas de capital nacional. Onde cerca de 45% dos laboratorios esta sediado no estado de SP.
-<img src="https://github.com/Igor-R-Amorim/Soulcode-Academy/blob/d58c3b8a8a0aa58400e42ab8d6a6dada39ac36fe/Projeto%20Final/Imagens/imagem_2022-09-23_143450592.png">
+<p align=center><img src="https://github.com/Igor-R-Amorim/Soulcode-Academy/blob/d58c3b8a8a0aa58400e42ab8d6a6dada39ac36fe/Projeto%20Final/Imagens/imagem_2022-09-23_143450592.png" width=84%></p>
 
 De acordo com nossas fontes, São Paulo é o estado com maior uso de antibióticos e antiinflamatórios e com um crescimento grande de uso de medicamentos psicolépticos e psicoanalépticos, principalmente durante a pandemia.
 
 Tendo isso em base queremos responder a pergunta do nosso cliente: Compensa investir no mercado farmacêutico do estado de SP?
-onde investir? capital ou interior?
-Qual o perfil dos consumidores?
-Quanto mais UBS's (unidades Básica de Saúde) Maior ou menor o numero de vendas?
+<br> Onde investir? capital ou interior?
+<br> Qual o perfil dos consumidores?
+<br> Quanto mais UBS's (Unidades Básica de Saúde) maior ou menor o numero de vendas?
 
 ##
 <h3 align=center> Requisitos do Projeto </h3>
 - Requisitos Obrigatórios
-<img src="https://github.com/Igor-R-Amorim/Soulcode-Academy/blob/84f97e5665569dc4238ca725eeb3806d7d5bbc7d/Projeto%20Final/Imagens/Requisitos%20Obrigat%C3%B3rios.png">
+<p align=center><img src="https://github.com/Igor-R-Amorim/Soulcode-Academy/blob/84f97e5665569dc4238ca725eeb3806d7d5bbc7d/Projeto%20Final/Imagens/Requisitos%20Obrigat%C3%B3rios.png" width=84%></p>
 - Requisitos Complementares
-<img src="https://github.com/Igor-R-Amorim/Soulcode-Academy/blob/84f97e5665569dc4238ca725eeb3806d7d5bbc7d/Projeto%20Final/Imagens/Requisitos%20Complementares.png">
+<p align=center><img src="https://github.com/Igor-R-Amorim/Soulcode-Academy/blob/84f97e5665569dc4238ca725eeb3806d7d5bbc7d/Projeto%20Final/Imagens/Requisitos%20Complementares.png" width=84%></p>
 
 ##
 <h3 align=center> Execução do projeto </h3>
 Para responder a pergunta do nosso cliente foram utilizados 7 datasets, sendo eles em distintos formatos como CSV, XLS, XLSX e uma extração diretamente de um banco de dados via BigQuery.
-<img src="https://github.com/Igor-R-Amorim/Soulcode-Academy/blob/914f0d37a5b890eb65ee43135dc4def7844c169d/Projeto%20Final/Imagens/Uniao%20Datasets.png">
+<p align=center><img src="https://github.com/Igor-R-Amorim/Soulcode-Academy/blob/914f0d37a5b890eb65ee43135dc4def7844c169d/Projeto%20Final/Imagens/Uniao%20Datasets.png" width=84%></p>
 O dataset referente as vendas de medicamentos em SP era demasiadamente grande, visto que nosso cliente deseja atuar em SP, e que os anos de relevancia são 2019( pandemia) e 2020(pós-pandemia). extraimos do BigQuery apenas estes anos, deste UF.
 <br>
 Os dados separadamente não respondiam as perguntas levantadas pelo cliente, sendo necessário uni-los a fim de extrair as comparações necessarias
@@ -51,7 +51,7 @@ Os dados separadamente não respondiam as perguntas levantadas pelo cliente, sen
 <br>
 
 Abaixo foi montado o Workflow do nosso projeto de ETL 
-<img src="https://github.com/Igor-R-Amorim/Soulcode-Academy/blob/914f0d37a5b890eb65ee43135dc4def7844c169d/Projeto%20Final/Imagens/WorkFlow%20-%20Projeto%20Final.png">
+<p align=center><img src="https://github.com/Igor-R-Amorim/Soulcode-Academy/blob/914f0d37a5b890eb65ee43135dc4def7844c169d/Projeto%20Final/Imagens/WorkFlow%20-%20Projeto%20Final.png" width=84%></p>
 Os dados brutos foram armazenados no Google Cloud Storage através do console do GCP. 
 Ao extrair os dados no Google Colab via conector amazenou-se o DataFrame(DF) bruto no MySQL em Cloud com alta disponibilidade.
 
@@ -65,6 +65,34 @@ O carregamento foi realizado com duas tratativas diferentes uma via pipeline e o
   </li>
 </ul>
 Por fim, inseriu-se os dados no Google DataStudio para análise dos dados.	
+<p align=center><img src="https://github.com/Igor-R-Amorim/Soulcode-Academy/blob/96b1d75c7d39e7de6e14680a75dc4fb00865086a/Projeto%20Final/Imagens/DataStudio.png" width=84%></p>
+<p> </p>
+<br>
 
+##
+<h3 align=center> Resultados Obtidos </h3>
+Após todo o processo de ETL, com dos dados tratados em seus devidos lugares, seja na bucket tratada ou no BigQuery. Comecou-se a tentar responder as perguntas do cliente.
 
+É melhor investir na capital ou interior?
+<br>
+Inicialmente a ideia seria comparar a quantidade de vendas por município. Porém, os municípios de maior densidade demográfica logicamente consumiam mais. Portanto levantamos a seguinte métrica. Dividimos o somatório de venda de cada cidade pela quantidade de habitantes daquela cidade a fim de obter o que chamamos de fator de venda.
+Assim podemos comparar melhor quais cidades venderam mais independente do tamanho de sua população.
+<p align=center><img src="https://github.com/Igor-R-Amorim/Soulcode-Academy/blob/96b1d75c7d39e7de6e14680a75dc4fb00865086a/Projeto%20Final/Imagens/Fluxo%20de%20vendas.png"></p>
+De acordo com o gráfico de "Fator de vendas x Cidade" podemos observar que a cidade com o maior fator de vendas é Ubatuba, porém mais de 90% do seu fator de venda está concentrado em 2019. Já as cidades de Sabino e São José do Rio Preto têm um fator de vendas crescentes indicando possíveis oportunidades. Já a cidade de Borá apresenta uma linearidade com o passar dos anos, indicando uma boa previsibilidade de fluxo de vendas.
+
+Qual o perfil dos consumidores?
+<p align=center><img src="https://github.com/Igor-R-Amorim/Soulcode-Academy/blob/96b1d75c7d39e7de6e14680a75dc4fb00865086a/Projeto%20Final/Imagens/Perfil%201.png" width=84%></p><br>
+O gráfico de "Quantidade de vendas x idade" nos mostra quais são as faixas de idade que mais consomem medicamento no estado.
+Podemos notar que as pessoas de 40 a 45 anos e de 55 a 60 anos são o público de maior consumo.
+<br>
+Quando olhamos o gráfico de "Vendas x Categoria Etária" podemos ver que de 2019 para 2020 o público adulto foi o único que teve um crescimento sobre o consumo de fármacos.
+<br>
+O público feminino consumiu pouco mais do que 55% dos medicamentos do período, não havendo grande distinção.
+<p align=center><img src="https://github.com/Igor-R-Amorim/Soulcode-Academy/blob/96b1d75c7d39e7de6e14680a75dc4fb00865086a/Projeto%20Final/Imagens/Perfil%202.png" width=84%></p><br>
+Ao listar os medicamentos mais consumidos por esse público, observa-se que os 8 mais vendidos são todos da categoria ATC 'J' categorizados como antibióticos e anti-infecciosos gerais. Confirmando assim a reportagem na motivação desse projeto.
+A quantidade distinta de medicamentos disponíveis no mercado é maior para genéricos do que para medicamentos similares ou "novos" (medicamentos de referência ex: aspirina®, viagra®, coristina®,...) como podemos confirmar no gráfico de "Variedade de medicamentos x Tipo de medicamento"
+Porém temos uma variedade muito maior de laboratórios que fabricam similares e referência do que genéricos.
+<p align=center><img src="https://github.com/Igor-R-Amorim/Soulcode-Academy/blob/96b1d75c7d39e7de6e14680a75dc4fb00865086a/Projeto%20Final/Imagens/Perfil%202.png" width=84%></p><br>
+
+<br> Quanto mais UBS's (Unidades Básica de Saúde) maior ou menor o numero de vendas?
 ​
