@@ -78,21 +78,48 @@ Após todo o processo de ETL, com dos dados tratados em seus devidos lugares, se
 Inicialmente a ideia seria comparar a quantidade de vendas por município. Porém, os municípios de maior densidade demográfica logicamente consumiam mais. Portanto levantamos a seguinte métrica. Dividimos o somatório de venda de cada cidade pela quantidade de habitantes daquela cidade a fim de obter o que chamamos de fator de venda.
 Assim podemos comparar melhor quais cidades venderam mais independente do tamanho de sua população.
 <p align=center><img src="https://github.com/Igor-R-Amorim/Soulcode-Academy/blob/96b1d75c7d39e7de6e14680a75dc4fb00865086a/Projeto%20Final/Imagens/Fluxo%20de%20vendas.png"></p>
-De acordo com o gráfico de "Fator de vendas x Cidade" podemos observar que a cidade com o maior fator de vendas é Ubatuba, porém mais de 90% do seu fator de venda está concentrado em 2019. Já as cidades de Sabino e São José do Rio Preto têm um fator de vendas crescentes indicando possíveis oportunidades. Já a cidade de Borá apresenta uma linearidade com o passar dos anos, indicando uma boa previsibilidade de fluxo de vendas.
+De acordo com o gráfico de 'Fator de vendas x Cidade' podemos observar que a cidade com o maior fator de vendas é Ubatuba, porém mais de 90% do seu fator de venda está concentrado em 2019. Já as cidades de Sabino e São José do Rio Preto têm um fator de vendas crescentes indicando possíveis oportunidades. Já a cidade de Borá apresenta uma linearidade com o passar dos anos, indicando uma boa previsibilidade de fluxo de vendas.
 
 Qual o perfil dos consumidores?
 <p align=center><img src="https://github.com/Igor-R-Amorim/Soulcode-Academy/blob/96b1d75c7d39e7de6e14680a75dc4fb00865086a/Projeto%20Final/Imagens/Perfil%201.png" width=84%></p><br>
-O gráfico de "Quantidade de vendas x idade" nos mostra quais são as faixas de idade que mais consomem medicamento no estado.
+O gráfico de 'Quantidade de vendas x idade' nos mostra quais são as faixas de idade que mais consomem medicamento no estado.
 Podemos notar que as pessoas de 40 a 45 anos e de 55 a 60 anos são o público de maior consumo.
 <br>
-Quando olhamos o gráfico de "Vendas x Categoria Etária" podemos ver que de 2019 para 2020 o público adulto foi o único que teve um crescimento sobre o consumo de fármacos.
+Quando olhamos o gráfico de 'Vendas x Categoria Etária' podemos ver que de 2019 para 2020 o público adulto foi o único que teve um crescimento sobre o consumo de fármacos.
 <br>
-O público feminino consumiu pouco mais do que 55% dos medicamentos do período, não havendo grande distinção.
+Dos 51,179 Mi de medicamentos vendidos no periodo, o público feminino consumiu pouco mais do que 55% dos medicamentos do período, não havendo grande distinção entre os sexos.
 <p align=center><img src="https://github.com/Igor-R-Amorim/Soulcode-Academy/blob/96b1d75c7d39e7de6e14680a75dc4fb00865086a/Projeto%20Final/Imagens/Perfil%202.png" width=84%></p><br>
-Ao listar os medicamentos mais consumidos por esse público, observa-se que os 8 mais vendidos são todos da categoria ATC 'J' categorizados como antibióticos e anti-infecciosos gerais. Confirmando assim a reportagem na motivação desse projeto.
-A quantidade distinta de medicamentos disponíveis no mercado é maior para genéricos do que para medicamentos similares ou "novos" (medicamentos de referência ex: aspirina®, viagra®, coristina®,...) como podemos confirmar no gráfico de "Variedade de medicamentos x Tipo de medicamento"
-Porém temos uma variedade muito maior de laboratórios que fabricam similares e referência do que genéricos.
-<p align=center><img src="https://github.com/Igor-R-Amorim/Soulcode-Academy/blob/96b1d75c7d39e7de6e14680a75dc4fb00865086a/Projeto%20Final/Imagens/Perfil%202.png" width=84%></p><br>
-
+Diferentemente da quantidade total de 51.179 Mi, o público adulto consumiu 32.848 Mi dessa quantia.
+<br>
+Ao listar os medicamentos mais consumidos por esse público, observa-se que os 8 mais vendidos são todos da categoria ATC 'J' classificados como antibióticos e anti-infecciosos gerais. Confirmando assim a reportagem na motivação desse projeto.
+<br>
+A quantidade distinta de medicamentos disponíveis no mercado é maior para genéricos do que para medicamentos similares ou "novos" (medicamentos de referência ex: aspirina®, viagra®, coristina®,...) como podemos confirmar no gráfico de 'Variedade de medicamentos x Tipo de medicamento'
+Porém temos uma variedade muito maior de laboratórios que fabricam similares e referência do que genéricos, conforme o gráfico 'Quantidade de fabricantes x Tipo de medicamento'.
+<p align=center><img src="https://github.com/Igor-R-Amorim/Soulcode-Academy/blob/270dfcaf9cd4add96c2e04eb13201300fae5f526/Projeto%20Final/Imagens/Perfil%203.png" width=84%></p><br>
+Fazendo uma tabela dinâmica com mapa de calor, podemos ver uma grande variedade de medicamentos psicolépticos(N05) e psicoanalépticos(N06) ocupando as 2ª e 4ª posição da tabela. 
+<p align=center><img src="https://github.com/Igor-R-Amorim/Soulcode-Academy/blob/270dfcaf9cd4add96c2e04eb13201300fae5f526/Projeto%20Final/Imagens/PsicoAtivos.png" width=84%></p><br>
+Nesse slide, fica claro que para todas as idades os medicamentos "Psico-Ativos" (psicolépticos e psicoanalépticos) teve um aumento de consumo.
+<br>
+Ao listar os princípio ativos mais vendidos, vemos os 2 primeiros do quadro "Princípio ativo mais vendidos", oxalato de escitaloprám e cloridrato de sertralina são dois antidepressivos mais vendidos em SP.
+<br>
+Ao usar o checkbox filtrando apenas os anos de 2019 e posteriormente o de 2020 tivemos um aumento de quase 70mil unidades vendidas desses medicamentos com o passar do ano.
+<br>
+Diferentemente da visão geral, no caso dos medicamentos "Psico-Ativos" as mulheres têm participação maior um pouco. pouco mais de 60% de consumo em relação ao público masculino.
+<br>
 <br> Quanto mais UBS's (Unidades Básica de Saúde) maior ou menor o numero de vendas?
+<p align=center><img src="https://github.com/Igor-R-Amorim/Soulcode-Academy/blob/270dfcaf9cd4add96c2e04eb13201300fae5f526/Projeto%20Final/Imagens/QtdUBS.png"></p><br>
+Para responder essa pergunta, vamos resgatar o gráfico de 'Fator de vendas acumulado no período x Cidade' e compará-lo com o gráfico 'Cidade x Quantidade de UBS'.
+<br> 
+Observa-se que nenhuma das cidades com maior quantidade de UBS’s aparecem no gráfico de fator de vendas, causando na equipe a falsa esperança de que quantidade de UBS's seria inversamente proporcional ao fator de vendas. Porém ao comparar diretamente, a quantidade de UBS's pelo Fator de vendas, observa-se que não existe uma correlação clara entre as variáveis. Mas que cidades com menos de 35 UBS's são as que mais vendem.
+
+##
+<h3 align=center> Referencias e outros questinamentos </h3>
+
+- Outras perguntas como os custos do projeto, Serviços mais usados em cloud, detalhes explicativos do codigo ou referencias bibliograficas das informaçoes e dos datasets usados estão na apresentação.
+
+
+- Contatos podem ser obtidos no README do autor deste Repositório ou tambem na apresentação contendo todos os integrantes.
+
+
+- A gravação original da apresentação pode ser obtidida através de solicitação com a soulcode. 
 ​
