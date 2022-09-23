@@ -6,7 +6,7 @@ O tema que nos foi atribuído era: Mercado Farmacêutico
 
 Apresentação Dinamica: https://datastudio.google.com/s/mlTpyE8QvbY
 
-Apresentação Estatica: https://drive.google.com/file/d/14UZ440DX8OcbYJp9bmW_zofUY8PZY_GB/view
+Apresentação Estatica: https://drive.google.com/file/d/14UZ440DX8OcbYJp9bmW_zofUY8PZY_GB/view?usp=sharing
 ##
 
 <h3 align=center> Fundamentação </h3>
