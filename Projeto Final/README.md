@@ -6,8 +6,8 @@
 
 # Projeto Final - Bootcamp Engenharia de Dados
 
-Formado pela equipe: Felipe Campelo, Igor Rocha, Madson Cordeiro e Livia Matsumoto 
-<br>
+>Formado pela equipe: Felipe Campelo, Igor Rocha, Madson Cordeiro e Livia Matsumoto 
+>
 >O tema que nos foi atribuído era: Mercado Farmacêutico
 
 Apresentação Dinamica: https://datastudio.google.com/s/mlTpyE8QvbY
