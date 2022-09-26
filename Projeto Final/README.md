@@ -1,8 +1,14 @@
+![GitHub repo size](https://img.shields.io/github/repo-size/Igor-R-Amorim/README-template?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/Igor-R-Amorim/README-template?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/Igor-R-Amorim/README-template?style=for-the-badge)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/Igor-R-Amorim/README-template?style=for-the-badge)
+![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/Igor-R-Amorim/README-template?style=for-the-badge)
+
 # Projeto Final - Bootcamp Engenharia de Dados
 
 Formado pela equipe: Felipe Campelo, Igor Rocha, Madson Cordeiro e Livia Matsumoto 
 <br>
-O tema que nos foi atribuído era: Mercado Farmacêutico
+>O tema que nos foi atribuído era: Mercado Farmacêutico
 
 Apresentação Dinamica: https://datastudio.google.com/s/mlTpyE8QvbY
 
