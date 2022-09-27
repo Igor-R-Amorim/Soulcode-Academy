@@ -1,6 +1,6 @@
 Projeto Individual: Marketing_campaign
 <br>
-Dataset Concedido pelo professor: https://drive.google.com/file/d/1BS46ogaV9XH1fuYrPpvsEk84NcQ3MY62/view?usp=drive_web&authuser=0
+Dataset concedido pelo professor: https://drive.google.com/file/d/1BS46ogaV9XH1fuYrPpvsEk84NcQ3MY62/view?usp=drive_web&authuser=0
 
 <br>
 <br>
