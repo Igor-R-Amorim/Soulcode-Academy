@@ -1,3 +1,9 @@
+![GitHub repo size](https://img.shields.io/github/repo-size/Igor-R-Amorim/README-template?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/Igor-R-Amorim/README-template?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/Igor-R-Amorim/README-template?style=for-the-badge)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/Igor-R-Amorim/README-template?style=for-the-badge)
+![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/Igor-R-Amorim/README-template?style=for-the-badge)
+
 Projeto Individual: Marketing_campaign
 <br>
 Dataset concedido pelo professor: https://drive.google.com/file/d/1BS46ogaV9XH1fuYrPpvsEk84NcQ3MY62/view?usp=drive_web&authuser=0
