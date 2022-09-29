@@ -11,7 +11,7 @@ Dataset concedido pelo professor: https://drive.google.com/file/d/1BS46ogaV9XH1f
 <br>
 <br>
 
-📗 **Diretrizes do Projeto:**
+# 📗 **Diretrizes do Projeto:**
 >Nivel Infra
 
 - O Dataset deve ser salvo em ambiente cloud(Cloud Storage)
