@@ -1,4 +1,4 @@
-- Estudo e aplicação de modelos customizados de pipeline -
+- Estudo e aplicação de modelos customizados de pipeline
 
 Objetivo: Criação de um modelo de pipeline customizada para ser executado em dataflow.
 
